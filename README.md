@@ -3,6 +3,8 @@
 This is a backend API developed using **FastAPI** and **PostgreSQL** for registering and managing railway passenger complaints.  
 Users can also upload complaint-related media files (like images/videos), which are saved **locally**.
 
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+
 ---
 
 ## 📦 Features
@@ -29,17 +31,18 @@ Users can also upload complaint-related media files (like images/videos), which 
 
 ## 🚀 How to Run
 
-1. Open terminal and go to project folder:
+1. Open terminal and go to the project folder:
+
    ```bash
    cd RailSathiBE
-
-2. Start server:
    python -m uvicorn main:app --reload --port 5002
 
-3. Open Swagger UI in browser:
+2. Open Swagger UI in browser:
    http://localhost:5002/rs_microservice/docs
-   
-🧪 API Endpoints
+
+
+## 🧪 API Endpoints
+
 | Method   | Endpoint                                                       | Description                     |
 | -------- | -------------------------------------------------------------- | ------------------------------- |
 | `POST`   | `/rs_microservice/complaint/add`                               | Add new complaint               |
@@ -50,7 +53,8 @@ Users can also upload complaint-related media files (like images/videos), which 
 | `DELETE` | `/rs_microservice/complaint/delete/{complain_id}`              | Delete complaint                |
 | `GET`    | `/health`                                                      | API health check                |
 
-🧾 Sample Test Data
+## 🧾 Sample Test Data
+
 | Field                 | Value         |
 | --------------------- | ------------- |
 | Name                  | harika        |
@@ -64,28 +68,24 @@ Users can also upload complaint-related media files (like images/videos), which 
 | Coach                 | S1            |
 | Berth                 | 13            |
 
-📸 Screenshots
-. ✅ Complaint Created Successfully
+## 📸 Screenshots
+✅ Complaint Created Successfully
+✅ Media Uploaded Successfully
+✅ Get Complaints by Date
+✅ Complaint Deleted Successfully
 
-. ✅ Media Uploaded Successfully
+📁 (All screenshots are included in the ZIP folder under Screenshots/)
 
-. ✅ Get Complaints by Date
-
-. ✅ Complaint Deleted Successfully
-
-📁 (All screenshots included in ZIP folder)
-
-🙋 About Me
+## 🙋 About Me
 I am Harika Daka, a recent graduate passionate about backend development and API design.
-This project was completed as part of a technical assignment to demonstrate my skills in Python (FastAPI), PostgreSQL, and backend API development.
+This project was completed as part of a technical assignment to demonstrate my skills in Python (FastAPI), PostgreSQL, and API development.
 
-💡 Through this project, I learned:
-. Handling multipart/form-data in APIs
+## 💡 What I Learned
+- Handling multipart/form-data in FastAPI
 
-. Uploading and saving media files locally
+- Uploading and saving media files locally
 
-. Writing SQL queries with PostgreSQL
+- Writing and executing PostgreSQL queries
 
-. Testing APIs using Swagger UI
+- Testing endpoints via Swagger UI
 
-✨ Feel free to connect with me for feedback or opportunities!
